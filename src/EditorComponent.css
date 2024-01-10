@@ -1,4 +1,22 @@
-.editor-container {
-  border: 1px solid black;
-  min-height: 400px;
+.header{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editor-container{
+  border: 2px solid lightblue;
+  height: 70vh;
+  padding: 1rem 2rem;
+  overflow: auto;
+}
+button{
+  padding: 0.2rem 0.5rem;
+  box-shadow: black 5px 5px;
+
+}
+
+button:active{
+  transform: scale(0.8);
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './EditorComponent.css'
 import {
   Editor,
   EditorState,
@@ -120,9 +121,13 @@ function EditorComponent() {
   return (
     <>
       <div>
+        <div className="header">
+     <div></div>
+      <h3>Demo Editor By Abhishek</h3>
         <button onClick={saveContent}>Save</button>
+        </div>
       </div>
-      <div className="editor-container">
+      <div className="editor-container" >
         <Editor
           editorState={editorState}
           onChange={setEditorState}
